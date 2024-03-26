@@ -42,7 +42,7 @@ jobs:
 #      다운 받아서 migrate라는 CLI로 이름을 바꿔야 실행 가능함.
       run : | 
         curl -L https://github.com/golang-migrate/migrate/releases/download/v4.17.0/migrate.linux-amd64.tar.gz | tar xvz
-        sudo mv migrate.linux-amd64 /usr/bin/migrate
+        sudo mv migrate /usr/bin/migrate
         which migrate
 
     - name: Make Migrations
